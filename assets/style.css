@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.mainlogo {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .mainlogo {
+        display: block;
+        margin-left: 20px;
+    }
+
+    #sign {
+        margin-right: 50px;
+    }
+}
