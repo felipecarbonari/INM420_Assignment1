@@ -7,6 +7,17 @@
     display: none;
 }
 
+img {
+    object-fit: cover;
+}
+
+#yellow {
+    background-color: #ffc56b;
+    width: 355px;
+    height: 464px;
+    border-radius: 5px;
+}
+
 @media only screen and (min-width: 600px) {
     .mainlogo {
         display: block;
