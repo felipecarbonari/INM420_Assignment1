@@ -1,8 +1,41 @@
+/* adds BG image for the page */
+article {
+    background-image: url(Images/MobileBG.png);
+    width: 100%;
+}
+
+/* the next 4 items changes the texts in the desktop x mobile page */
+#deskh2 {
+    display: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#deskh4 {
+    display: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mobileh2 {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mobileh4 {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid brand name in bold*/
 .navbar-brand {
     font-weight: bold;
     padding-left: 10px;
 }
 
+/* Remove logo from mobile */
 .mainlogo {
     display: none;
 }
@@ -11,13 +44,70 @@ img {
     object-fit: cover;
 }
 
-#yellow {
-    background-color: #ffc56b;
-    width: 355px;
-    height: 464px;
-    border-radius: 5px;
+.greenTitle {
+    text-align: center;
+    color: white;
 }
 
+h4, h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Creates space between cards and title */
+.cards-1 {
+    margin-top: 50px;
+}
+
+/* button design */
+#learnButton {
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(138, 84, 255);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* The next colors means every rectangle in the web page */
+#yellow {
+    background-color: #ffc56b;
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* remove text from rectangles */
+#desc {
+    display: none;
+}
+
+#green {
+    background-color: #07b791;
+    border-radius: 10px;
+}
+
+/* remove text from rectangles */
+.card-description {
+    display: none;
+}
+
+#pink {
+    background-color: #c609a0;
+    border-radius: 10px;
+}
+
+#blue {
+    background-color: #0069f3;
+    border-radius: 10px;
+}
+
+#purple {
+    background-color: #5902ca;
+    border-radius: 10px;
+}
+
+/* Desktop version */
 @media only screen and (min-width: 600px) {
     .mainlogo {
         display: block;
@@ -26,5 +116,82 @@ img {
 
     #sign {
         margin-right: 50px;
+    }
+
+    article {
+        background-image: url('Images/DeskBG.png');
+        height: auto;
+    }
+
+    #deskh2 {
+        display: block;
+    }
+    
+    #deskh4 {
+        display: block;
+    }
+
+    #mobileh2 {
+        display: none;
+    }
+    
+    #mobileh4 {
+        display: none;
+    }
+
+    #learnButton {
+        border-radius: 20px;
+        width: 305px;
+        color: rgb(138, 84, 255);
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    #yellow {
+        background-color: #ffc56b;
+        width: 305px;
+        height: 500px;
+        border-radius: 5px;
+    }
+
+    #green {
+        background-color: #07b791;
+        width: 415px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    #pink {
+        background-color: #c609a0;
+        width: 300px;
+        height: 240px;
+        border-radius: 5px;
+    }
+
+    #blue {
+        background-color: #0069f3;
+        width: 100px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    #purple {
+        background-color: #5902ca;
+        width: 415px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    #desc {
+        display: block;
+    }
+    
+    #green {
+        background-color: #07b791;
+        border-radius: 10px;
+    }
+    
+    .card-description {
+        display: block;
     }
 }
